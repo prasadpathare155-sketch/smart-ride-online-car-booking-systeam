@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartRide - Car Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f6fc;
+      color: #172554;
+    }
+    header {
+      background: #102a56;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+    nav {
+      background: #183d72;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 35px 15px;
+    }
+    .booking {
+      background: white;
+      max-width: 480px;
+      margin: auto;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #ccd5e3;
+    }
+    input, select, button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccd5e3;
+      border-radius: 6px;
+    }
+    button {
+      background: #f59e0b;
+      color: #172554;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚗 SmartRide</h1>
+    <p>Your Journey, Our Responsibility</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#booking">Book a Car</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Explore More, Travel Better!</h2>
+    <p>Book a car for your next trip with ease.</p>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2>Book Your Ride</h2>
+
+    <form id="bookingForm">
+      <label>Pickup Location</label>
+      <input id="pickup" placeholder="Enter pickup city" required>
+
+      <label>Destination</label>
+      <input id="destination" placeholder="Enter destination" required>
+
+      <label>Travel Date</label>
+      <input id="date" type="date" required>
+
+      <label>Select Car</label>
+      <select id="car">
+        <option value="1500">Hatchback - ₹1500/day</option>
+        <option value="2500">Sedan - ₹2500/day</option>
+        <option value="4000">SUV - ₹4000/day</option>
+      </select>
+
+      <button type="submit">Calculate Fare & Book</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 SmartRide | Student Mini Project</p>
+  </footer>
+
+  <script>
+    document.getElementById("bookingForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const pickup = document.getElementById("pickup").value.trim();
+        const destination = document.getElementById("destination").value.trim();
+        const date = document.getElementById("date").value;
+        const fare = Number(document.getElementById("car").value);
+
+        if (pickup.toLowerCase() === destination.toLowerCase()) {
+          document.getElementById("result").textContent =
+            "Please choose a different destination.";
+          return;
+        }
+
+        if (date < new Date().toISOString().slice(0, 10)) {
+          document.getElementById("result").textContent =
+            "Please choose today or a future date.";
+          return;
+        }
+
+        document.getElementById("result").textContent =
+          "Demo booking request created! Estimated fare: ₹" + fare +
+          ". " + pickup + " to " + destination +
+          " on " + date + ". No real booking has been made.";
+      });
+  </script>
+</body>
+</html>
