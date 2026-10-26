@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Prasad Tours & Travels</title>
+<meta name="description" content="Book comfortable car journeys with Sai Prasad Tours & Travels.">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f4f7fc;color:#263247;line-height:1.6}
+header{background:#101c36;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brand{font-size:19px;font-weight:bold}
+.brand span{color:#f5bd50}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+.hero{background:linear-gradient(135deg,#101c36,#294f80);color:white;text-align:center;padding:65px 18px}
+.hero small{color:#f5bd50;font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(32px,7vw,48px);line-height:1.2;margin:18px 0}
+.hero p{max-width:600px;margin:0 auto 25px;color:#e2e8f0}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:bold;border:0;cursor:pointer;font-size:15px}
+.gold{background:#f5bd50;color:#101c36}
+.section{padding:40px 18px}
+.title{text-align:center;margin-bottom:25px}
+.title h2{color:#101c36;font-size:28px}
+.title p{color:#64748b;margin-top:5px}
+.features,.cars{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;max-width:1000px;margin:auto}
+.feature,.car-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 18px #10264f12}
+.feature{text-align:center;padding:22px 12px}
+.feature .icon{font-size:32px}
+.feature h3,.car-card h3{color:#101c36;margin:8px 0}
+.feature p,.car-card p{color:#64748b;font-size:14px}
+.car-card img{width:100%;height:180px;object-fit:cover;display:block}
+.info{padding:16px}
+.car-card a{color:#174ea6;font-weight:bold;text-decoration:none}
+.booking{max-width:650px;margin:auto;background:white;padding:24px;border-radius:14px;box-shadow:0 5px 25px #10264f12}
+.booking h2{text-align:center;color:#101c36}
+.subtitle{text-align:center;color:#64748b;margin-bottom:18px}
+label{display:block;font-weight:bold;margin-top:14px;font-size:14px}
+input,select,textarea{width:100%;padding:13px;margin-top:6px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;font-family:inherit;background:white}
+.whatsapp{background:#168b45;color:white;width:100%;margin-top:20px}
+.call{background:#101c36;color:white;width:100%;margin-top:12px}
+.about{max-width:800px;text-align:center;margin:auto}
+.about p{color:#64748b}
+footer{background:#101c36;color:white;text-align:center;padding:25px 15px}
+footer a{color:#f5bd50;text-decoration:none}
+.note{font-size:12px;color:#64748b;margin-top:14px}
+.float-wa{position:fixed;bottom:16px;right:14px;background:#168b45;color:white;text-decoration:none;padding:12px 16px;border-radius:30px;font-weight:bold;box-shadow:0 4px 12px #0003;z-index:5}
+@media(max-width:500px){header{justify-content:center;text-align:center}nav{justify-content:center}.booking{padding:18px}}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="brand">SAI PRASAD <span>TOURS & TRAVELS</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cars">Our Cars</a>
+    <a href="#about">About Us</a>
+    <a href="#booking">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <small>YOUR JOURNEY, OUR RESPONSIBILITY</small>
+  <h1>Travel Comfortably.<br>Arrive Happily.</h1>
+  <p>Comfortable car travel for family trips, local journeys and outstation destinations. Book your next ride with us.</p>
+  <a class="btn gold" href="#booking">Book Your Ride →</a>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2>Why Choose Us?</h2>
+    <p>Reliable service for a comfortable journey.</p>
+  </div>
+  <div class="features">
+    <div class="feature"><div class="icon">🚘</div><h3>Comfortable Rides</h3><p>Enjoy a relaxing journey.</p></div>
+    <div class="feature"><div class="icon">📍</div><h3>Flexible Routes</h3><p>Choose your destination.</p></div>
+    <div class="feature"><div class="icon">📱</div><h3>Easy Booking</h3><p>Book by WhatsApp or phone.</p></div>
+  </div>
+</section>
+
+<section class="section" id="cars">
+  <div class="title">
+    <h2>Choose Your Ride</h2>
+    <p>Select your preferred car in the booking form.</p>
+  </div>
+  <div class="cars">
+    <div class="car-card">
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Sedan car">
+      <div class="info"><h3>Sedan Car</h3><p>Suitable for city and family travel.</p><a href="#booking">Book This Car →</a></div>
+    </div>
+    <div class="car-card">
+      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80" alt="SUV car">
+      <div class="info"><h3>SUV</h3><p>Extra space for family trips.</p><a href="#booking">Book This Car →</a></div>
+    </div>
+    <div class="car-card">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Premium car">
+      <div class="info"><h3>Premium Car</h3><p>Travel in style and comfort.</p><a href="#booking">Book This Car →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="booking">
+  <div class="booking">
+    <h2>Book Your Journey</h2>
+    <p class="subtitle">Fill in your travel details below.</p>
+
+    <form id="bookingForm">
+      <label for="name">Full Name *</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+
+      <label for="phone">Mobile Number *</label>
+      <input id="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="Enter 10-digit mobile number" required>
+
+      <label for="from">Pickup Location *</label>
+      <input id="from" type="text" placeholder="Where should we pick you up?" required>
+
+      <label for="to">Destination *</label>
+      <input id="to" type="text" placeholder="Where would you like to go?" required>
+
+      <label for="date">Travel Date *</label>
+      <input id="date" type="date" required>
+
+      <label for="car">Select Your Car *</label>
+      <select id="car" required>
+        <option value="Swift Dzire">Swift Dzire</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Other Car">Other Car</option>
+      </select>
+
+      <label for="passengers">Number of Passengers</label>
+      <select id="passengers">
+        <option>1</option><option>2</option><option>3</option>
+        <option>4</option><option>5</option><option>6</option>
+        <option>7</option>
+      </select>
+
+      <label for="details">Additional Information</label>
+      <textarea id="details" rows="3" placeholder="Any special requests?"></textarea>
+
+      <button class="btn whatsapp" type="submit">Book via WhatsApp</button>
+    </form>
+
+    <a class="btn call" href="tel:+919284428010">Call Now: 9284428010</a>
+    <p class="note">Your booking is a request and will be confirmed after contact with our team.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about">
+    <div class="title"><h2>About Us</h2></div>
+    <p>At Sai Prasad Tours & Travels, we aim to make your journeys comfortable and convenient. Contact us for your travel requirements and booking enquiries.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>Sai Prasad Tours & Travels</h3>
+  <p>Your Journey, Our Responsibility</p>
+  <p>Phone: <a href="tel:+919284428010">9284428010</a></p>
+  <p>© <span id="year"></span> Sai Prasad Tours & Travels. All rights reserved.</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919284428010" target="_blank" rel="noopener">WhatsApp Us</a>
+
+<script>
+const BUSINESS_NUMBER = "919284428010";
+const dateInput = document.getElementById("date");
+
+const today = new Date();
+dateInput.min = new Date(
+  today.getTime() - today.getTimezoneOffset() * 60000
+).toISOString().split("T")[0];
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const from = document.getElementById("from").value.trim();
+  const to = document.getElementById("to").value.trim();
+  const date = dateInput.value;
+  const car = document.getElementById("car").value;
+  const passengers = document.getElementById("passengers").value;
+  const details = document.getElementById("details").value.trim();
+
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return;
+  }
+
+  const message =
+    "SAI PRASAD TOURS & TRAVELS - BOOKING REQUEST\n\n" +
+    "Name: " + name + "\n" +
+    "Customer Mobile: " + phone + "\n" +
+    "Pickup Location: " + from + "\n" +
+    "Destination: " + to + "\n" +
+    "Travel Date: " + date + "\n" +
+    "Car: " + car + "\n" +
+    "Passengers: " + passengers + "\n" +
+    "Additional Information: " + (details || "None");
+
+  const url = "https://wa.me/" + BUSINESS_NUMBER +
+    "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+});
+</script>
+</body>
+</html>
